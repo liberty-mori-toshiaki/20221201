@@ -67,13 +67,15 @@ for (let i = 0; i < upper.length; i++) {
     st_y = e.clientY;
     console.log("mousedown x-y --", ";" + st_x + "-" + st_y);
   });  
+
   upper[i].addEventListener("touchstart", function (e) {
     st_x = e.touches[0].clientX;
     st_y = e.touches[0].clientY;
     console.log("touchstart x-y --", ";" + st_x + "-" + st_y);
   });
 
-
+// 
+// 
 
   upper[i].addEventListener("mouseup", function (e) {
     ed_x = e.clientX;
@@ -86,7 +88,7 @@ for (let i = 0; i < upper.length; i++) {
 
     switch (true) {
       case move_x < -10:
-        translate_x = -159;
+        translate_x = -158;
         break;
       case move_x > 5:
         translate_x = 0;
@@ -114,7 +116,7 @@ for (let i = 0; i < upper.length; i++) {
 
     switch (true) {
       case move_x < -10:
-        translate_x = -159;
+        translate_x = -158;
         break;
       case move_x > 5:
         translate_x = 0;
