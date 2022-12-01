@@ -69,8 +69,8 @@ for (let i = 0; i < upper.length; i++) {
   });  
 
   upper[i].addEventListener("touchstart", function (e) {
-    st_x = e.changedTouches[0].clientX;
-    st_y = e.changedTouches[0].clientY;
+    st_x = e.changedTouches[0].pageX;
+    st_y = e.changedTouches[0].pageY;
     console.log("touchstart x-y --", ";" + st_x + "-" + st_y);
   });
 
@@ -106,8 +106,8 @@ for (let i = 0; i < upper.length; i++) {
   });
   // 
   upper[i].addEventListener("touchend", function (e) {
-    ed_x = e.changedTouches[0].clientX;
-    ed_y = e.changedTouches[0].clientY;
+    ed_x = e.changedTouches[0].pageX;
+    ed_y = e.changedTouches[0].pageY;
     move_x = ed_x - st_x;
     mv_x_bf = mv_x;
 
