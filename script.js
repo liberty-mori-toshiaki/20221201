@@ -51,7 +51,14 @@ for (let i = 0; i < upper.length; i++) {
     st_x = e.clientX;
     st_y = e.clientY;
     console.log("mousedown x-y --", ";" + st_x + "-" + st_y);
+  });  
+  upper[i].addEventListener("touchstart", function (e) {
+    st_x = e.clientX;
+    st_y = e.clientY;
+    console.log("mousedown x-y --", ";" + st_x + "-" + st_y);
   });
+
+
 
   upper[i].addEventListener("mouseup", function (e) {
     ed_x = e.clientX;
@@ -80,4 +87,12 @@ for (let i = 0; i < upper.length; i++) {
 
     upper[i].style.transform = "translateX(" + translate_x + "px)";
   });
+}
+
+function start(){
+
+}
+
+function en(){
+  
 }
