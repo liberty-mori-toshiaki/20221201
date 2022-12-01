@@ -13,6 +13,7 @@ window.addEventListener("resize", setheight);
 // 
 
 
+// 開始点の処理
 window.addEventListener("resize", function () {
   windowsize();
 });
@@ -50,7 +51,7 @@ for (let i = 0; i < 20; i++) {
     `;
 }
 
-//
+//　終了点の処理
 const upper = document.querySelectorAll(".upper");
 for (let i = 0; i < upper.length; i++) {
   let st_x = 0;
