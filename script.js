@@ -89,8 +89,8 @@ for (let i = 0; i < upper.length; i++) {
   });
   
   upper[i].addEventListener("touchend", function (e) {
-    ed_x = e.touches[0].clientX;
-    ed_y = e.touches[0].clientY;
+    ed_x = e.changedTouches[0].clientX;
+    ed_y = e.changedTouches[0].clientY;
     move_x = ed_x - st_x;
     mv_x_bf = mv_x;
 
