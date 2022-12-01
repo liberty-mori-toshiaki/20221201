@@ -87,6 +87,33 @@ for (let i = 0; i < upper.length; i++) {
 
     upper[i].style.transform = "translateX(" + translate_x + "px)";
   });
+  upper[i].addEventListener("touchend", function (e) {
+    ed_x = e.clientX;
+    ed_y = e.clientY;
+    move_x = ed_x - st_x;
+    mv_x_bf = mv_x;
+
+    console.log("mouseup   x-y --", ed_x + "-" + ed_x);
+    console.log("move ", ";" + move_x);
+
+    switch (true) {
+      case move_x < -10:
+        translate_x = -159;
+        break;
+      case move_x > 5:
+        translate_x = 0;
+        break;
+      // default:
+      //   translate_x = 0;
+      //   break;
+    }
+
+    for (let j = 0; j < upper.length; j++) {
+      upper[j].style.transform = "translateX(0px)";
+    }
+
+    upper[i].style.transform = "translateX(" + translate_x + "px)";
+  });
 }
 
 function start(){

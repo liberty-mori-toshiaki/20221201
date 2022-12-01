@@ -20,7 +20,7 @@ body {
   }
   
   .container {
-    width: 500px;
+    width: clamp(350px,100%,600px);
     height: clamp(500px, 100vh, 90vh);
     background: whitesmoke;
     overflow: hidden;
