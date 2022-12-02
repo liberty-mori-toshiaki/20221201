@@ -65,6 +65,7 @@ body {
   
   .user_wrap .upper img {
     border-radius: 50%;
+    user-select:none;
   }
   
   .user_wrap .upper .center {
@@ -73,6 +74,8 @@ body {
     box-sizing: border-box;
     display: grid;
     place-items: center left;
+    -webkit-user-select: none;
+    user-select:none;
   }
   
   .user_wrap .upper .right {
@@ -81,6 +84,7 @@ body {
     box-sizing: border-box;
     display: grid;
     place-items: center;
+    user-select:none;
   }
   
   .user_wrap .lower {
